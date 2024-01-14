@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="28dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextDegrees"
+            android:layout_width="114dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="32dp"
+            android:padding="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/degrees"
+            android:textSize="16sp"
+            android:background="@drawable/custom_input"
+            android:inputType="text|numberSigned" />
+
+        <Spinner
+            android:id="@+id/temperatureSpinner"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="28dp"
+            android:entries="@array/spinnerItems" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/select_below_for_convert_unit_text" />
+
+    <Spinner
+        android:id="@+id/convertTempSpinner"
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:entries="@array/spinnerItems" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/result_text" />
+
+    <EditText
+        android:id="@+id/editTextResult"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:autofillHints=""
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="0.0"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="300dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/white"
+        android:layout_height="55dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:textStyle="bold"
+        android:text="@string/convert_text" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:textStyle="bold"
+        android:text="@string/clear_text" />
+
+
+</LinearLayout>

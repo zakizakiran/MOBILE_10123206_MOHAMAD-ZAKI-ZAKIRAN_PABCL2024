@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Temperature Converter</string>
+    <string name="name">Name</string>
+    <string name="hi">Hi, %1$s!</string>
+    <string name="degrees">Degrees</string>
+    <string name="convert_text">Convert</string>
+    <string name="clear_text">Clear</string>
+    <string name="result_value_text">%1$s %2$s</string>
+    <string name="select_below_for_convert_unit_text">Select below for convert unit</string>
+    <string name="result_text">Result</string>
+</resources>
